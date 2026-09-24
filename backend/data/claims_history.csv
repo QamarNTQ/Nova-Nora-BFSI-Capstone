@@ -1,0 +1,31 @@
+claim_id,customer_id,policy_id,claim_type,claim_amount,claim_date,status
+CL001,C001,P001,Accidental damage,45000,2026-01-10,Approved
+CL002,C001,P001,Fire,30000,2026-04-12,Approved
+CL003,C002,P002,Accidental damage,90000,2026-02-18,Approved
+CL004,C002,P002,Accidental damage,70000,2026-05-04,Approved
+CL005,C003,P003,Fire,45000,2026-01-22,Approved
+CL006,C003,P003,Accidental damage,180000,2026-03-01,Denied
+CL007,C004,P004,Accidental damage,120000,2026-01-15,Approved
+CL008,C004,P004,Flood,80000,2026-03-19,Approved
+CL009,C004,P004,Accidental damage,95000,2026-05-20,Approved
+CL010,C005,P005,Theft,250000,2026-02-02,Approved
+CL011,C005,P005,Fire,100000,2026-04-16,Approved
+CL012,C006,P006,Accidental damage,50000,2026-01-09,Approved
+CL013,C006,P006,Accidental damage,60000,2026-02-14,Approved
+CL014,C006,P006,Accidental damage,55000,2026-03-21,Approved
+CL015,C006,P006,Accidental damage,70000,2026-05-12,Approved
+CL016,C007,P007,Theft,120000,2026-01-28,Approved
+CL017,C007,P007,Accidental damage,110000,2026-05-07,Approved
+CL018,C008,P008,Accidental damage,200000,2026-02-11,Approved
+CL019,C008,P008,Fire,75000,2026-04-03,Approved
+CL020,C009,P009,Flood,90000,2026-03-05,Approved
+CL021,C009,P009,Accidental damage,100000,2026-05-18,Approved
+CL022,C010,P010,Third-party liability,150000,2026-01-30,Approved
+CL023,C010,P010,Third-party liability,175000,2026-05-02,Approved
+CL024,C011,P011,Accidental damage,220000,2026-02-17,Approved
+CL025,C011,P011,Theft,180000,2026-05-10,Approved
+CL026,C012,P012,Fire,65000,2026-02-06,Approved
+CL027,C013,P013,Accidental damage,130000,2026-01-11,Approved
+CL028,C013,P013,Flood,90000,2026-03-14,Approved
+CL029,C013,P013,Accidental damage,125000,2026-05-21,Approved
+CL030,C014,P014,Accidental damage,160000,2026-04-08,Approved
