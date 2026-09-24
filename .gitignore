@@ -1,4 +1,5 @@
 .env
+__init__.py
 myenv/
 .venv/
 venv/
