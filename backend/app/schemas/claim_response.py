@@ -2,6 +2,7 @@ from pydantic import BaseModel, Field
 
 
 class ClaimResponse(BaseModel):
+    session_id: str = Field(..., description="Conversation ID for follow-up questions")
     customer_id: str = Field(..., description="Unique customer identifier")
     policy_id: str = Field(..., description="Active contract policy identifier")
     claim_type: str = Field(..., description="Claim category")
