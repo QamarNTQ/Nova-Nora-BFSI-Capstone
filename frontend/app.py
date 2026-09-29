@@ -3,7 +3,23 @@ import os
 import requests
 import streamlit as st
 
-BACKEND_URL = os.getenv("BACKEND_URL", "http://127.0.0.1:8000")
+claim_types =     [
+        "Accidental Damage & Crash Collision (Vehicles, Rail, Hangar)",
+        "Theft, Burglary, and Housebreaking (Property, Fleet, Contents)",
+        "Fire, Thermal Explosion, and Wiring Short-Circuit (Data Center, Substation)",
+        "Natural Calamities & Environmental Acts of God (AOG, Floods, Tidal Surge)",
+        "Third-Party Liability (Property Damage, Bodily Injury, Transit Hazards)",
+        "Cargo Asset Loss & Emergency Roadside Towing Breakdown",
+        "Inpatient Hospitalization & Day Care Procedures (Health, Geriatric Care)",
+        "Critical Illness, Cancer Oncological Care, and Radiation Benefits",
+        "Structural Building Failure & Foundation Collapse (Masonry, Scour Rock)",
+        "Electrical Grid Surge, Overvoltage, and Electromagnetic Failure (PDU, Avionics)",
+        "Mechanical Pipe Rupture, Vacuum Collapse, and Liquid Leaks (Cryogenic, UPW)",
+        "Kinetic Asset Impact & Aerodynamic Delamination (Micrometeorite, Blade, Rail)"
+    ]
+
+
+BACKEND_URL = "http://127.0.0.1:8000"
 if not BACKEND_URL.endswith("/"):
     BACKEND_URL = BACKEND_URL + "/"
 
@@ -24,7 +40,7 @@ with st.form("claim_form"):
     with col1:
         customer_id = st.text_input("Customer ID", value="C014")
         policy_id = st.text_input("Policy ID", value="P014")
-        claim_type = st.selectbox("Claim Type", ["Accidental damage", "Theft", "Fire", "Natural Calamity"])
+        claim_type = st.selectbox("Claim Type", claim_types)
 
     with col2:
         claim_amount = st.number_input("Claim Amount", min_value=0.0, step=1000.0, value=180000.0)
