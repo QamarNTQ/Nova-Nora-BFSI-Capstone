@@ -1,11 +1,17 @@
-import os 
+import os
+import sys
 import logging
-from mcp.server.fastmcp import FastMCP
-import torch
+from pathlib import Path
 
+ROOT_DIR = Path(__file__).resolve().parents[2]
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
+
+from mcp.server.fastmcp import FastMCP
+
+from backend.app.tools.policy_coverage import check_policy_coverage
 from backend.app.tools.claims_history import check_claim_history
 from backend.app.tools.fraud_risk import check_fraud_risk
-from backend.app.tools.policy_coverage import check_policy_coverage
 
 logging.basicConfig(level=logging.INFO,format="%(asctime)s - %(levelname)s - %(message)s")
 
